@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StructuralPatterns_Telecomunication
 {
-    interface IProvider
+    public interface IProvider
     {
         void GetAccess(Client client);
     }

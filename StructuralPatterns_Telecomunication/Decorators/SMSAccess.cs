@@ -8,7 +8,7 @@ namespace StructuralPatterns_Telecomunication.Decorators
         {
             client.AccessTypes.Add(AccessType.SMS);
             base.GetAccess(client);
-            Console.WriteLine("");
+            Console.WriteLine("Sms access");
         }
     }
 }

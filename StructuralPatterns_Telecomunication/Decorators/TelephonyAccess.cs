@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace StructuralPatterns_Telecomunication.Decorators
 {
-    class InternetAccess : Access
+    class TelephonyAccess : Access
     {
-        //private IProvider _provider;
-        //public InternetAccess(IProvider provider)
-        //{
-        //    _provider = provider;
-        //}
         public override void GetAccess(Client client)
         {
-            client.AccessTypes.Add(AccessType.Internet);
+            client.AccessTypes.Add(AccessType.Telephony);
             base.GetAccess(client);
-            Console.WriteLine("Internet access");
+            Console.WriteLine("Telephony access");
         }
     }
 }

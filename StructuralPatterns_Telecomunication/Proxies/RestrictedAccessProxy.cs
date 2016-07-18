@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace StructuralPatterns_Telecomunication.Proxies
 {
     class RestrictedAccessProxy : IProvider
@@ -14,9 +9,11 @@ namespace StructuralPatterns_Telecomunication.Proxies
         {
             _provider = provider;
         }
+
+
         public void GetAccess(Client client)
         {
-            
+            client.Provider.GetAccess(client);
         }
     }
 }

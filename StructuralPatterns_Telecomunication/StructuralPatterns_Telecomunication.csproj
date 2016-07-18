@@ -48,6 +48,7 @@
     <Compile Include="Decorators\Access.cs" />
     <Compile Include="Decorators\InternetAccess.cs" />
     <Compile Include="Decorators\SMSAccess.cs" />
+    <Compile Include="Decorators\TelephonyAccess.cs" />
     <Compile Include="IProvider.cs" />
     <Compile Include="MainProvider.cs" />
     <Compile Include="MoldcellProvider.cs" />
